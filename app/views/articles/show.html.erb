@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container w-50">
   <div class="d-flex align-items-baseline border-bottom">
-    <h1 class="text-muted font-weight-normal"><%= @article.title %></h1>
+    <h1 class="text-muted font-weight-normal"><%= @article.title.upcase %></h1>
     <%= link_to '<i class="fas fa-pencil-alt mx-2"></i>'.html_safe, edit_path(@article) %>
     <%= link_to '<i class="fas fa-trash-alt mx-2"></i>'.html_safe,
                 article_path(@article),
